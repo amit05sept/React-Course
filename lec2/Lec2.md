@@ -34,4 +34,15 @@
 14. *dist* folder contains all the minified files and production build files.
 15. *dist* only contains 3 files *index.html* , *index.css*, and *index.js*.
 16. All these files are compressed for optimization of the APP.
-17. 
+17. there are three types of dependencies that are found in this file. They are **dependencies**, **dev dependencies**, and **peer dependencies**. 
+18.  **Dependencies:** Dependencies that your project needs to run, like a library that provides functions that you call from your code.
+They are installed transitively (if A depends on B depends on C, npm install on A will install B and C).
+Example: lodash: your project calls some lodash functions.
+19.  **Dev Dependencies:** Dependencies you only need during development or releasing, like compilers that take your code and compile it into javascript, test frameworks or documentation generators.
+They are not installed transitively (if A depends on B dev-depends on C, npm install on A will install B only).
+  * example : Installing the bootstrap module that we want to use in the development phase only and not in the production or testing phase for the project,
+  *  use the following command: `npm install bootstrap --save-dev`
+20.  A **peer dependency** specifies that our package is compatible with a particular version of an npm package.  or What [plugins] need is a way of expressing these “dependencies” between plugins and their host package. Some way of saying, “I only work when plugged in to version 1.2.x of my host package, so if you install me, be sure that it’s alongside a compatible host.” We call this relationship a peer dependency.
+21.  node_modules + dist + .parcel-cache needs to be added to .gitignore 
+22.  READ from your copy notes 😅
+23.  rest i will add after few days.
