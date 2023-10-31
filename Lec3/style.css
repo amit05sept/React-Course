@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(226, 146, 66);
+}
+/* .logo{
+    width: 100px; 
+}
+ 
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: pink;
+    border: 1px solid rgb(255, 20, 59);
+} 
+
+.nav-items > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items >ul > li{
+    margin-top: 33px;
+    margin-right: 19px;
+    padding: 10px;
+} */
+
+
+
+/* nav bar */
+.header {
+    padding: 0 0.8rem;
+    height: 5rem;
+    background-color: rgb(255, 136, 0);
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+    position: sticky;
+    top:0;
+    z-index: 100;
+  }
+  .logo {
+    height: 5rem;
+  }
+  
+  .navbar-list {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+  }
+  
+  .navbar-links:link,
+  .navbar-links:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    transition: all 0.3s;
+  }
+  .navbar-links:hover,
+  .navbar-links:active {
+    color: yellow;
+  }
+  
+  /* 
+       mobile navbar styling
+  */
+  .mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .mobile-nav-icon {
+    width: 3rem;
+    height: 3rem;
+    color: white;
+  
+  }
+  .mobile-nav-icon[name="close-outline"]
+  {
+    display: none;
+  }
+
+  /* card  */
+
+.card{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 10%  10% 0% 0%;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+
+}
+.card > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+
+}
+.cuisines{
+    margin-bottom: 10px;
+}
+.avgRating{
+    background-color: rgb(148, 255, 112);
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.restaurant-list{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+}
