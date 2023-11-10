@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(226, 146, 66);
+}
+
+/* nav bar */
+.header {
+    padding: 0 0.8rem;
+    height: 5rem;
+    background-color: rgb(255, 136, 0);
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+    position: sticky;
+    top:0;
+    z-index: 100;
+  }
+  .logo {
+    height: 5rem;
+  }
+  
+  .navbar-list {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+  }
+  
+  .navbar-links:link,
+  .navbar-links:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    transition: all 0.3s;
+  }
+  .navbar-links:hover,
+  .navbar-links:active {
+    color: yellow;
+  }
+  
+
+  .login-btn{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 70px;
+  }
+  .logout-btn{
+    padding: 10px;
+    min-width: 70px;
+    border-radius: 5px;
+  }
+ 
+
+  /* card  */
+
+.card{
+    width: 200px;
+    min-height: 290px;
+    border: 2px solid black;
+    border-radius: 10%  10% 0% 0%;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+
+}
+.card > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+
+}
+
+.cuisines{
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.avgRating{
+    background-color: rgb(148, 255, 112);
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.restaurant-list{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+}
+
+
+/* shimmer ui  */
+
+.shimmer-container{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+
+}
+
+.shimmer-card{
+  width: 200px;
+  height: 290px;
+  border-radius: 10%  10% 0% 0%;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  background-color: rgb(234, 166, 88);
+}
+
+.shimmer-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  background-color: rgb(255, 194, 125);
+}
+
+.shimmer-title{
+  width: 180px;
+  height: 30px;
+  margin: 8px;
+  background-color: rgb(255, 194, 125);
+}
+.shimmer-cusines{
+  width: 150px;
+  height: 20px;
+  margin: 8px;
+  background-color: rgb(255, 194, 125);
+}
+
+.shmmmer-avgRating{
+  background-color:  rgb(255, 194, 125);
+  display: inline-block;
+  height: 10px;
+  width: 20px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
