@@ -1,0 +1,309 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(226, 146, 66);
+}
+
+/* nav bar */
+.header {
+    padding: 0 0.8rem;
+    height: 5rem;
+    background-color: rgb(255, 136, 0);
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+    position: sticky;
+    top:0;
+    z-index: 100;
+  }
+  .logo {
+    height: 5rem;
+  }
+  
+  .navbar-list {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+  }
+  
+  .navbar-links:link,
+  .navbar-links:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    transition: all 0.3s;
+  }
+  .navbar-links:hover,
+  .navbar-links:active {
+    color: yellow;
+  }
+  
+
+  .login-btn{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 70px;
+  }
+  .logout-btn{
+    padding: 10px;
+    min-width: 70px;
+    border-radius: 5px;
+  }
+ 
+
+  /* card  */
+
+.card{
+    width: 200px;
+    min-height: 290px;
+    border: 2px solid black;
+    border-radius: 10%  10% 0% 0%;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+
+}
+.card > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+
+}
+
+.cuisines{
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.avgRating{
+    background-color: rgb(148, 255, 112);
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.restaurant-list{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+}
+
+
+/* shimmer ui  */
+
+.shimmer-container{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+
+}
+
+.shimmer-card{
+  width: 200px;
+  height: 290px;
+  border-radius: 10%  10% 0% 0%;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  background-color: rgb(234, 166, 88);
+}
+
+.shimmer-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  background-color: rgb(255, 194, 125);
+}
+
+.shimmer-title{
+  width: 180px;
+  height: 30px;
+  margin: 8px;
+  background-color: rgb(255, 194, 125);
+}
+.shimmer-cusines{
+  width: 150px;
+  height: 20px;
+  margin: 8px;
+  background-color: rgb(255, 194, 125);
+}
+
+.shmmmer-avgRating{
+  background-color:  rgb(255, 194, 125);
+  display: inline-block;
+  height: 10px;
+  width: 20px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+.About{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+
+}
+
+.AuthorImg{
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid rgb(83, 48, 3);
+  margin: 10px;
+}
+
+/* .AuthorTitle{
+  
+} */
+
+
+
+
+.RestaurantMenu{
+  margin: auto;
+  padding: 10px;
+}
+
+.RestaurantMenuImage{
+  width: 400px;
+  border: 20px solid white;
+  border-radius: 20px;
+}
+.RestaurantMenuHeader h1{
+font-size: 40px;
+margin: 50px;
+}
+
+.OpenCloseStatus{
+  font-size: 30px;
+  margin-left: 20px;
+
+}
+
+.RestaurantMenuItems{
+  margin-left: 50px;
+}
+.resNameMenuCard{
+  background-color: rgb(147, 39, 39);
+  border-bottom: 5px solid white;
+  color: white;
+  padding: 20px;
+  border-radius: 15px 50px;
+}
+.flower{
+  color : white;
+}
+
+.dots{
+  color: white;
+}
+
+.restaurantDetails{
+ font-size: 30px;
+}
+
+.restaurantDetails li{
+ list-style: none;
+}
+.restaurantClosed{
+  background-color: red;
+  color: white;
+}
+
+.restaurantOpen{
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+/* RestaurantMenuBody */
+.RestaurantMenuBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* this is for restuarant menu image and details */
+.RestaurantDetailsContainer{
+  display: flex;
+}
+
+.restaurantDetails{
+  margin-left: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Discounts{
+  display: flex;
+}
+
+.discount{
+margin-left: 10px;
+}
+
+.dash{
+  font-weight: bold;
+}
+
+.RestaurantMenuItems{
+  margin-top: 50px;
+  min-width: 600px;
+}
+
+.Menu{
+ /* border: 1px solid black; */
+ display: flex;
+ justify-content: space-between;
+ font-size: 30px;
+ /* width: 300px; */
+}
+
+.Menu h3{
+  text-align: center;
+}
+
+
+.Menu li{
+  list-style: none;
+  margin-bottom: 13px;
+}
+.ItemPrices{
+  margin-left: 30px;
+}
+
+.pricesText{
+  margin-left: -10px;
+}
+
+
+/* links to all document */
+a{
+  text-decoration: none;
+  color: black;
+}
